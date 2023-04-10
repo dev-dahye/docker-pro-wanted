@@ -13,3 +13,8 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+mission/*
+
+lecture-material/second/app_data/*
+lecture-material/second/db_data/*

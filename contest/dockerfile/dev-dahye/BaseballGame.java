@@ -74,11 +74,11 @@ public class BaseballGame{
                 }else{
                     System.out.println(ballCnt[0]+"S "+ballCnt[1]+"B   " + tryCnt + " Round");
                 }
-
-                if(tryCnt>=9){ //LOSE
-                    System.out.println("\n\n    ### GAME OVER ;-( ");
+                if(ballCnt[0]==3){//win
+                    System.out.println("\n\n    ### YOU WIN~~!");
                     System.out.println("ANSWER : " + answer[0] + " " + answer[1] + " " + answer[2]);
-                    System.out.println("    * New game enter any key / End the game enter (q/Q)");
+                    System.out.println("YOUR TRY COUNT : " + tryCnt);
+                    System.out.println("\n    * New game enter any key / End the game enter (q/Q)");
                     String key = scan.nextLine();
                     if(key.equals("q")||key.equals("Q")) {
                         break;
@@ -91,10 +91,9 @@ public class BaseballGame{
                         continue;
                     }
                 }
-                if(ballCnt[0]==3){//win
-                    System.out.println("\n\n    ### YOU WIN~~!");
+                if(tryCnt>=9){ //LOSE
+                    System.out.println("\n\n    ### GAME OVER ;-( ");
                     System.out.println("ANSWER : " + answer[0] + " " + answer[1] + " " + answer[2]);
-                    System.out.println("YOUR TRY COUNT : " + tryCnt);
                     System.out.println("\n    * New game enter any key / End the game enter (q/Q)");
                     String key = scan.nextLine();
                     if(key.equals("q")||key.equals("Q")) {
